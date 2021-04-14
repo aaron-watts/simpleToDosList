@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="shortcut-container">
+        <div class="shortcut">
+            <img src="imgs/background.png" alt="">
+            <p>My Computer</p>
+        </div>
+        <div class="shortcut">
+            <img src="imgs/chromium-browser.png" alt="">
+            <p>Internet Explorer</p>
+        </div>
+        <div class="shortcut">
+            <img src="imgs/evolution.png" alt="">
+            <p>Inbox</p>
+        </div>
+    </div>
+
+    <div id="prompt" class="window active">
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <img src="imgs/bash.png" alt="">MS DOS Prompt
+            </div>
+            <div class="title-bar-right">
+                <div class="window-control">
+                    <img src="imgs/window-minimize-symbolic.png" alt="">
+                </div>
+                <div class="window-control">
+                    <img src="imgs/window-maximize-symbolic.png" alt="">
+                </div>
+                <div class="window-control">
+                    <img src="imgs/window-close.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="terminal" class="terminal">
+            [user@host:/bin/ToDOS/]$&nbsp;
+        </div>
+    </div>
+
+    <div id="notepad" class="window inactive">
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <img src="imgs/accessories-text-editor.png" alt="">READ_ME.txt - Notepad
+            </div>
+            <div class="title-bar-right">
+                <div class="window-control">
+                    <img src="imgs/window-minimize-symbolic.png" alt="">
+                </div>
+                <div class="window-control">
+                    <img src="imgs/window-maximize-symbolic.png" alt="">
+                </div>
+                <div class="window-control">
+                    <img src="imgs/window-close.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div>File</div>
+            <div>Edit</div>
+            <div>Search</div>
+            <div>Help</div>
+        </div>
+
+        <div class="editor">
+            == READ ME ==<br>
+            =============<br>
+            === ToDOS ===<br>
+            =============<br><br>
+            To start type:<br>
+            >>> todos<br><br>
+            For help type:<br>
+            >>> help
+
+        </div>
+    </div>
+
+    <footer class="dock">
+        <div class="dock-left">
+            <div class="start">
+                <img src="imgs/xfdesktop-menu.png" alt="">Start
+            </div>
+            <div class="task-bar">
+                <img src="imgs/bash.png" alt="">
+                <img src="imgs/file-manager.png" alt="">
+
+            </div>
+            <div class="task active">
+                <img src="imgs/bash.png" alt="">MS DOS Prompt
+            </div>
+            <div class="task inactive">
+                <img src="imgs/accessories-text-editor.png" alt="">READ_ME.txt - Notepad
+            </div>
+        </div>
+
+        <div class="sys-tray">
+            <img src="imgs/xfce4-mixer-volume-high.png" alt=""><span id="clock">00:00 AM</span>
+        </div>
+    </footer>
+
+    <script src="keycodes.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+<!--
+    Windows tmeplates and icon theme:
+    https://github.com/grassmunk/Chicago95/blob/master/Screenshots/SCREENSHOTS.md
+-->
+
+<!--
+Must include for flat icons:
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+-->
+
+</html>
