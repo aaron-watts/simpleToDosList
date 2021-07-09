@@ -1,6 +1,7 @@
 body {
     /*background-image: url(imgs/wallpaperflare.com_wallpaper.jpg);*/
-    background: #000 url(imgs/wallpaperflare.com_wallpaper.jpg) center center no-repeat;
+    /*background: #000 url(imgs/wallpaperflare.com_wallpaper.jpg) center center no-repeat;*/
+    background-color: #3f7f5f;
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
